@@ -42,6 +42,10 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordHo
         notifyDataSetChanged();
     }
 
+    Word getWordAtPosition(int position){
+        return mWords.get(position);
+    }
+
     @Override
     public int getItemCount() {
         if (mWords != null)
